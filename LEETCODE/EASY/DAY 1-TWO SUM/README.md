@@ -1,8 +1,4 @@
-Got it 👍 You want a **unique and professional `README.md`** for your `two_sum` problem folder, instead of just dumping the raw text. I’ll structure it neatly with **sections, formatting, explanation, and code blocks** so it looks clean on GitHub.
 
-Here’s a **refined version of your README**:
-
----
 
 ## 📌 Problem 1: Two Sum
 
@@ -110,13 +106,11 @@ What if the input array is already sorted?
 
 ---
 
-### ✅ Summary
+### OVERALL SUMMARY - COMPLEXITY RECALL
 
 * **Brute Force:** Easy to implement, but slow → `O(n²)`.
 * **HashMap:** Much faster → `O(n)` runtime, `O(n)` space.
 * **Sorted Input Case:** Can use **two pointers** for `O(n)` runtime and `O(1)` space.
 
 ---
-
-Would you like me to also design a **template README format** that you can reuse for *every* problem (easy/medium/hard) so all your folders look consistent and professional on GitHub?
 
