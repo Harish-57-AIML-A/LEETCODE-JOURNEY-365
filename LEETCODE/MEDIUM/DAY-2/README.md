@@ -20,7 +20,6 @@ Constraints:
 📖 Example  
 
 Input:  
-```text
 numbers = [2, 7, 11, 15], target = 9
 ````
 
@@ -127,8 +126,6 @@ def twoSum(numbers, target):
 | Binary Search | O(n log n)      |        O(1)      | Uses extra search step  |
 | Two Pointers  | O(n)            |        O(1)      | Best & most efficient ✅ |
 
----
 
-```
 
 
