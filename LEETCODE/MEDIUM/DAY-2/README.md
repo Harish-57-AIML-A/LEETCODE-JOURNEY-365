@@ -1,36 +1,49 @@
-📌 Problem 2: Two Sum II – Input Array Is Sorted
+```markdown
+📌 Problem 2: Two Sum II – Input Array Is Sorted  
+🔗 LeetCode Link: [Two Sum II](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)  
+📊 Difficulty: Medium  
+🔥 Frequency: High  
 
-🔗 LeetCode Link: Two Sum II
+---
 
-📊 Difficulty: Medium
-🔥 Frequency: High
+📝 Problem Statement  
+Given a **1-indexed sorted array** of integers `numbers`, return the indices of the two numbers such that they add up to a specific target number.  
 
-📝 Problem Statement
+Constraints:  
+- Each input has exactly one solution.  
+- You may not use the same element twice.  
+- Indices must be returned in **ascending order**.  
 
-Given a 1-indexed sorted array of integers numbers, return the indices of the two numbers such that they add up to a specific target number.
+---
 
-Each input has exactly one solution.
+📖 Example  
 
-You may not use the same element twice.
+**Input:**  
+```
 
-Indices must be returned in ascending order.
+numbers = \[2, 7, 11, 15], target = 9
 
-📖 Example
+```
 
-Input:
+**Output:**  
+```
 
-numbers = [2, 7, 11, 15], target = 9
+\[1, 2]
 
+````
 
-Output:
+**Explanation:**  
+`numbers[0] + numbers[1] = 2 + 7 = 9`  
 
-[1, 2]
+---
 
-⚙️ Approaches
-1. Binary Search – O(n log n) runtime, O(1) space
+⚙️ Approaches  
 
-For each element x, search for target - x using binary search.
+### 1. Binary Search – O(n log n) runtime, O(1) space  
+- For each element `x`, search for `target - x` using binary search.  
+- Works, but not optimal since input is sorted.  
 
+```java
 public int[] twoSum(int[] numbers, int target) {
     for (int i = 0; i < numbers.length; i++) {
         int j = bsearch(numbers, target - numbers[i], i + 1);
@@ -53,17 +66,18 @@ private int bsearch(int[] A, int key, int start) {
     }
     return (L == R && A[L] == key) ? L : -1;
 }
+````
 
-2. Two Pointers – O(n) runtime, O(1) space ✅ (Best Solution)
+---
 
-Since the array is sorted, we can use two pointers:
+### 2. Optimized – Two Pointers ✅ Best Solution
 
-If the sum is too large → move j left.
+* Use two indices `i` (start) and `j` (end).
+* If `numbers[i] + numbers[j] < target`, move `i` forward.
+* If `numbers[i] + numbers[j] > target`, move `j` backward.
+* If equal → found solution.
 
-If the sum is too small → move i right.
-
-If equal → found solution.
-
+```java
 public int[] twoSum(int[] numbers, int target) {
     int i = 0, j = numbers.length - 1;
     while (i < j) {
@@ -78,8 +92,13 @@ public int[] twoSum(int[] numbers, int target) {
     }
     throw new IllegalArgumentException("No two sum solution");
 }
+```
+
+---
 
 🚀 Python Implementation
+
+```python
 def twoSum(numbers, target):
     i, j = 0, len(numbers) - 1
     while i < j:
@@ -91,9 +110,26 @@ def twoSum(numbers, target):
         else:
             return [i + 1, j + 1]
     raise ValueError("No two sum solution")
+```
 
-✅ OVERALL SUMMARY - COMPLEXITY COMPARISON
+---
 
-Binary Search: O(n log n), doesn’t fully use sorted property.
+🔮 Follow-up
+The `Two Pointers` method leverages the sorted nature of the input.
+If the array were **unsorted**, we’d need to use a **HashMap** (like in Problem 1).
 
-Two Pointers: O(n), O(1) space → Best for sorted input.
+---
+
+📌 OVERALL SUMMARY – COMPLEXITY CHECKLIST
+
+* **Binary Search:** `O(n log n)` runtime, `O(1)` space.
+* **Two Pointers:** `O(n)` runtime, `O(1)` space ✅ Best choice.
+
+```
+
+---
+
+👉 This matches your **Problem 1 README** format exactly (Problem → Example → Approaches → Java Code → Python Code → Follow-up → Summary).  
+
+Do you also want me to **standardize this format as a template** so that every new problem you add (easy/medium/hard) already has placeholders for each section? That way you just fill in the details.
+```
