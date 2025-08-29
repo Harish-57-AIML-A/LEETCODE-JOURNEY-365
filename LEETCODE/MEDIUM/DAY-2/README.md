@@ -1,7 +1,3 @@
-Perfect 👍 I’ve refactored your provided draft into a **unique, professional, GitHub-ready README** in the exact style you wanted for *Problem 2: Two Sum II – Input Array Is Sorted*.
-
-Here’s the clean version:
-
 ````markdown
 # 📌 Problem 2: Two Sum II – Input Array Is Sorted  
 
@@ -14,7 +10,7 @@ Here’s the clean version:
 ## 📝 Problem Statement  
 Given a **1-indexed sorted array** of integers `numbers`, return the indices of the two numbers such that they add up to a specific target number.  
 
-**Constraints:**  
+****Constraints:**  
 - Each input has exactly one solution.  
 - You may not use the same element twice.  
 - Indices must be returned in **ascending order**.  
@@ -135,7 +131,4 @@ def twoSum(numbers, target):
 
 ```
 
-👉 This is **unique, professional, and cleanly structured** — much better than raw dumps.  
 
-Do you want me to now **generalize this into a README template** (with placeholders like *Problem X, Example, Java/Python code, Summary*) so that for every new problem (Easy/Medium/Hard), you can just plug in details without rewriting the structure?
-```
