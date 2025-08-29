@@ -1,47 +1,50 @@
-```markdown
-📌 Problem 2: Two Sum II – Input Array Is Sorted  
-🔗 LeetCode Link: [Two Sum II](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)  
-📊 Difficulty: Medium  
-🔥 Frequency: High  
+Perfect 👍 I’ve refactored your provided draft into a **unique, professional, GitHub-ready README** in the exact style you wanted for *Problem 2: Two Sum II – Input Array Is Sorted*.
+
+Here’s the clean version:
+
+````markdown
+# 📌 Problem 2: Two Sum II – Input Array Is Sorted  
+
+🔗 **LeetCode Link:** [Two Sum II](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)  
+📊 **Difficulty:** Medium  
+🔥 **Frequency:** High  
 
 ---
 
-📝 Problem Statement  
+## 📝 Problem Statement  
 Given a **1-indexed sorted array** of integers `numbers`, return the indices of the two numbers such that they add up to a specific target number.  
 
-Constraints:  
+**Constraints:**  
 - Each input has exactly one solution.  
 - You may not use the same element twice.  
 - Indices must be returned in **ascending order**.  
 
 ---
 
-📖 Example  
+## 📖 Example  
 
 **Input:**  
-```
-
-numbers = \[2, 7, 11, 15], target = 9
-
-```
-
-**Output:**  
-```
-
-\[1, 2]
-
+```text
+numbers = [2, 7, 11, 15], target = 9
 ````
 
-**Explanation:**  
-`numbers[0] + numbers[1] = 2 + 7 = 9`  
+**Output:**
+
+```text
+[1, 2]
+```
+
+**Explanation:**
+`numbers[0] + numbers[1] = 2 + 7 = 9`
 
 ---
 
-⚙️ Approaches  
+## ⚙️ Approaches
 
-### 1. Binary Search – O(n log n) runtime, O(1) space  
-- For each element `x`, search for `target - x` using binary search.  
-- Works, but not optimal since input is sorted.  
+### 1️⃣ Binary Search – `O(n log n)` runtime, `O(1)` space
+
+* For each element `x`, search for `target - x` using binary search.
+* Works, but does **not fully exploit the sorted nature** of the input.
 
 ```java
 public int[] twoSum(int[] numbers, int target) {
@@ -66,11 +69,11 @@ private int bsearch(int[] A, int key, int start) {
     }
     return (L == R && A[L] == key) ? L : -1;
 }
-````
+```
 
 ---
 
-### 2. Optimized – Two Pointers ✅ Best Solution
+### 2️⃣ Two Pointers – `O(n)` runtime, `O(1)` space ✅ Best Solution
 
 * Use two indices `i` (start) and `j` (end).
 * If `numbers[i] + numbers[j] < target`, move `i` forward.
@@ -96,7 +99,7 @@ public int[] twoSum(int[] numbers, int target) {
 
 ---
 
-🚀 Python Implementation
+## 🚀 Python Implementation
 
 ```python
 def twoSum(numbers, target):
@@ -114,22 +117,25 @@ def twoSum(numbers, target):
 
 ---
 
-🔮 Follow-up
-The `Two Pointers` method leverages the sorted nature of the input.
-If the array were **unsorted**, we’d need to use a **HashMap** (like in Problem 1).
+## 🔮 Follow-up
+
+* The **Two Pointers** method leverages the sorted nature of the input.
+* If the array were **unsorted**, we’d need to use a **HashMap** (like in **Problem 1: Two Sum**).
 
 ---
 
-📌 OVERALL SUMMARY – COMPLEXITY CHECKLIST
+## ✅ OVERALL SUMMARY – Complexity Checklist
 
-* **Binary Search:** `O(n log n)` runtime, `O(1)` space.
-* **Two Pointers:** `O(n)` runtime, `O(1)` space ✅ Best choice.
+| Approach      | Time Complexity | Space Complexity | Notes                   |
+| ------------- | --------------- | ---------------- | ----------------------- |
+| Binary Search | O(n log n)      | O(1)             | Uses extra search step  |
+| Two Pointers  | O(n)            | O(1)             | Best & most efficient ✅ |
+
+---
 
 ```
 
----
+👉 This is **unique, professional, and cleanly structured** — much better than raw dumps.  
 
-👉 This matches your **Problem 1 README** format exactly (Problem → Example → Approaches → Java Code → Python Code → Follow-up → Summary).  
-
-Do you also want me to **standardize this format as a template** so that every new problem you add (easy/medium/hard) already has placeholders for each section? That way you just fill in the details.
+Do you want me to now **generalize this into a README template** (with placeholders like *Problem X, Example, Java/Python code, Summary*) so that for every new problem (Easy/Medium/Hard), you can just plug in details without rewriting the structure?
 ```
