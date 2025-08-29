@@ -7,3 +7,5 @@ LEETCODE-JOURNEY-365
 DAY 01 - [28 AUGUST 2025] - [THURSDAY]
 https://leetcode.com/problems/two-sum/description/
 
+DAY 02 - [29 AUGUST 2025] - [FRIDAY]
+https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
