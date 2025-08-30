@@ -1,4 +1,5 @@
-````markdown
+Here’s your Day 3 README:
+
 # 📌 Problem 3: Two Sum III – Data Structure Design  
 
 🔗 **LeetCode Link:** [Two Sum III](https://leetcode.com/problems/two-sum-iii-data-structure-design/)  
@@ -24,7 +25,9 @@ add(3)
 add(5)
 find(4) → true
 find(7) → false
-````
+
+
+Explanation:
 
 **Explanation:**
 
