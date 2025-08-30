@@ -36,64 +36,6 @@ Explanation:
 
 ---
 
-## ⚙️ Approaches
-
-### 1️⃣ Store All Pair Sums – O(n²) Space, Fast Find
-
-* Maintain a hash table of all possible pair sums.
-* `add`: For each new element, form sums with existing numbers → O(n).
-* `find`: Simply check if the value exists in hash table → O(1).
-* Useful if `find` is called much more frequently than `add`.
-
----
-
-### 2️⃣ Sorted Array + Two Pointers – O(log n) Add, O(n) Find
-
-* Keep numbers in sorted order.
-* `add`: Insert in O(log n) using binary search.
-* `find`: Use **two pointers** to check if a pair sums to target.
-* More space-efficient than storing all pair sums.
-
----
-
-### 3️⃣ Hash Table (Best Trade-off) – O(1) Add, O(n) Find ✅
-
-* Store numbers and their counts in a HashMap.
-* `add`: Increment count → O(1).
-* `find`: Iterate through keys, check if `(target - num)` exists.
-
-  * Special case: if `num == target - num`, need count ≥ 2.
-
----
-
-## 💻 Java Implementation
-
-```java
-class TwoSum {
-    private Map<Integer, Integer> table = new HashMap<>();
-    
-    // Add number to the data structure
-    public void add(int number) {
-        int count = table.getOrDefault(number, 0);
-        table.put(number, count + 1);
-    }
-    
-    // Find if there exists a pair with given sum
-    public boolean find(int value) {
-        for (Map.Entry<Integer, Integer> entry : table.entrySet()) {
-            int num = entry.getKey();
-            int y = value - num;
-            if (y == num) {
-                if (entry.getValue() >= 2) return true;
-            } else if (table.containsKey(y)) {
-                return true;
-            }
-        }
-        return false;
-    }
-}
-```
-
 **Explanation:**
 
 * 1 + 3 = 4 → found ✅
@@ -210,5 +152,4 @@ print(ts.find(7))  # False
 
 ```
 
----
 
