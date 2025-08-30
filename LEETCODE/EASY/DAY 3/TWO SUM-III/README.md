@@ -1,5 +1,3 @@
----
-
 ````markdown
 # 🚀 LeetCode Daily – Day 3
 
