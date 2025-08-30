@@ -1,7 +1,3 @@
-Got it 👍 You’re maintaining your **LeetCode Daily repo (Day 3 – Two Sum III)** and now you want a **README.md** file that looks clean, professional, and aesthetic.
-
-Here’s a well-structured README file for **Day 3**:
-
 ---
 
 ````markdown
@@ -127,11 +123,4 @@ System.out.println(obj.find(7)); // false
 
 ---
 
-✨ *Day 3 Completed – Consistency is the key!* 🚀
 
-```
-
----
-
-Would you like me to also **add Day 1 & Day 2 inside the same README (like a running log)** so it looks like a **daily progress journal**, or do you prefer **one README per day**?
-```
