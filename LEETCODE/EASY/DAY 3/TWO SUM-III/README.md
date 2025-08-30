@@ -1,5 +1,4 @@
-Here’s your Day 3 README:
-
+````markdown
 # 📌 Problem 3: Two Sum III – Data Structure Design  
 
 🔗 **LeetCode Link:** [Two Sum III](https://leetcode.com/problems/two-sum-iii-data-structure-design/)  
@@ -25,16 +24,7 @@ add(3)
 add(5)
 find(4) → true
 find(7) → false
-
-
-Explanation:
-
-**Explanation:**
-
-* 1 + 3 = 4 → found ✅
-* No pair sums to 7 → false ❌
-
----
+````
 
 **Explanation:**
 
@@ -151,5 +141,3 @@ print(ts.find(7))  # False
 | HashMap (Best)        | O(1)           | O(n)            | O(n)  | Best trade-off ✅         |
 
 ```
-
-
