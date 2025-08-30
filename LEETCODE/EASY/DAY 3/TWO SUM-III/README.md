@@ -1,117 +1,128 @@
-````markdown
-🚀 Day 3 – Two Sum III: Data Structure Design
+# 📌 Problem 3: Two Sum III – Data Structure Design  
 
-📌 Problem Statement  
-Design and implement a `TwoSum` class. It should support the following operations:  
-
-- **add(input)** → Add the number `input` to an internal data structure.  
-- **find(value)** → Find if there exists any pair of numbers such that their sum equals `value`.  
-
-Example
-```java
-add(1);
-add(3);
-add(5);
-find(4) → true   // because 1 + 3 = 4
-find(7) → false  // no two numbers sum to 7
-````
+🔗 **LeetCode Link:** [Two Sum III](https://leetcode.com/problems/two-sum-iii-data-structure-design/)  
+📊 **Difficulty:** Easy  
+🔥 **Frequency:** Medium  
 
 ---
 
-## 💡 Approaches
+## 📝 Problem Statement  
+Design and implement a **TwoSum** class that supports the following operations:  
 
-### 1️⃣ Hash Table with Pair Sums
-
-* **add:** O(n) → compute all pair sums for each new number.
-* **find:** O(1) → direct lookup in hash table.
-* **Space:** O(n²).
-* ✅ Best when `find` operations >> `add` operations.
+- `add(input)` → Add the number `input` to an internal data structure.  
+- `find(value)` → Find if there exists **any pair of numbers** whose sum is equal to `value`.  
 
 ---
 
-### 2️⃣ Sorted Array + Two Pointers
+## 📖 Example  
 
-* Maintain a sorted array.
-* **add:** O(log n) (binary search insert).
-* **find:** O(n) (two pointer sum search).
-* **Space:** O(n).
+**Input / Operations:**  
+```text
+add(1)
+add(3)
+add(5)
+find(4) → true
+find(7) → false
 
----
 
-### 3️⃣ Hash Table (Store Counts) – Efficient & Simple
+Explanation:
 
-* Store numbers in a **HashMap** with their frequency.
-* **add:** O(1).
-* **find:** O(n) (iterate through keys and check complement).
-* **Space:** O(n).
-* ✅ Practical and balanced approach.
+1 + 3 = 4 → found ✅
 
----
+No pair sums to 7 → false ❌
 
-## 🧑‍💻 Code Implementation (Java)
+⚙️ Approaches
+1️⃣ Store All Pair Sums – O(n²) Space, Fast Find
 
-```java
-import java.util.*;
+Maintain a hash table of all possible pair sums.
 
-public class TwoSum {
+add: For each new element, form sums with existing numbers → O(n).
+
+find: Simply check if the value exists in hash table → O(1).
+
+Useful if find is called much more frequently than add.
+
+2️⃣ Sorted Array + Two Pointers – O(log n) Add, O(n) Find
+
+Keep numbers in sorted order.
+
+add: Insert in O(log n) using binary search.
+
+find: Use two pointers to check if a pair sums to target.
+
+More space-efficient than storing all pair sums.
+
+3️⃣ Hash Table (Best Trade-off) – O(1) Add, O(n) Find ✅
+
+Store numbers and their counts in a HashMap.
+
+add: Increment count → O(1).
+
+find: Iterate through keys, check if (target - num) exists.
+
+Special case: if num == target - num, need count ≥ 2.
+
+💻 Java Implementation
+class TwoSum {
     private Map<Integer, Integer> table = new HashMap<>();
-
-    // Add number to the structure
-    public void add(int input) {
-        int count = table.getOrDefault(input, 0);
-        table.put(input, count + 1);
+    
+    // Add number to the data structure
+    public void add(int number) {
+        int count = table.getOrDefault(number, 0);
+        table.put(number, count + 1);
     }
-
-    // Check if a pair exists
-    public boolean find(int val) {
+    
+    // Find if there exists a pair with given sum
+    public boolean find(int value) {
         for (Map.Entry<Integer, Integer> entry : table.entrySet()) {
             int num = entry.getKey();
-            int complement = val - num;
-
-            if (complement == num) {
-                // Need at least two instances
+            int y = value - num;
+            if (y == num) {
                 if (entry.getValue() >= 2) return true;
-            } else if (table.containsKey(complement)) {
+            } else if (table.containsKey(y)) {
                 return true;
             }
         }
         return false;
     }
-
-    // Demo run
-    public static void main(String[] args) {
-        TwoSum ts = new TwoSum();
-        ts.add(1);
-        ts.add(3);
-        ts.add(5);
-
-        System.out.println(ts.find(4)); // true
-        System.out.println(ts.find(7)); // false
-    }
 }
-```
 
----
+🚀 Python Implementation
+class TwoSum:
+    def __init__(self):
+        self.table = {}
+    
+    def add(self, number: int) -> None:
+        self.table[number] = self.table.get(number, 0) + 1
+    
+    def find(self, value: int) -> bool:
+        for num in self.table:
+            y = value - num
+            if y == num:
+                if self.table[num] >= 2:
+                    return True
+            elif y in self.table:
+                return True
+        return False
 
-## ⏱ Complexity Analysis
+# Example Usage
+ts = TwoSum()
+ts.add(1)
+ts.add(3)
+ts.add(5)
+print(ts.find(4))  # True
+print(ts.find(7))  # False
 
-* **Time:**
+🔮 Follow-up
 
-  * `add`: O(1)
-  * `find`: O(n)
-* **Space:** O(n)
+If find is called very frequently, prefer storing all pair sums.
 
----
+If both add and find are balanced, use HashMap approach (best trade-off).
 
-## ✅ Key Takeaways
+If input needs to stay sorted, use two pointers.
 
-* Trade-offs exist between **fast add vs fast find**.
-* The **HashMap approach** is the most practical choice.
-* Handling **duplicates** correctly is crucial.
-
-```
-
----
-
-Do you want me to also create the **Day 3 README with the same emojis, bold styling, and section titles** as your **Day 2 README** (like a daily log), so it feels like part of a continuous 30-day challenge?
-```
+✅ OVERALL SUMMARY – Complexity Checklist
+Approach	Add Complexity	Find Complexity	Space	Notes
+Store Pair Sums	O(n)	O(1)	O(n²)	Best for frequent find
+Sorted + Two Pointers	O(log n)	O(n)	O(n)	Balanced but slower find
+HashMap (Best)	O(1)	O(n)	O(n)	Best trade-off ✅
