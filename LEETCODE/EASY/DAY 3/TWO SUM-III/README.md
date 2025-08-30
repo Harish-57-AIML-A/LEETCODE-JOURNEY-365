@@ -1,3 +1,4 @@
+````markdown
 # 📌 Problem 3: Two Sum III – Data Structure Design  
 
 🔗 **LeetCode Link:** [Two Sum III](https://leetcode.com/problems/two-sum-iii-data-structure-design/)  
@@ -23,46 +24,48 @@ add(3)
 add(5)
 find(4) → true
 find(7) → false
+````
 
+**Explanation:**
 
-Explanation:
+* 1 + 3 = 4 → found ✅
+* No pair sums to 7 → false ❌
 
-1 + 3 = 4 → found ✅
+---
 
-No pair sums to 7 → false ❌
+## ⚙️ Approaches
 
-⚙️ Approaches
-1️⃣ Store All Pair Sums – O(n²) Space, Fast Find
+### 1️⃣ Store All Pair Sums – O(n²) Space, Fast Find
 
-Maintain a hash table of all possible pair sums.
+* Maintain a hash table of all possible pair sums.
+* `add`: For each new element, form sums with existing numbers → O(n).
+* `find`: Simply check if the value exists in hash table → O(1).
+* Useful if `find` is called much more frequently than `add`.
 
-add: For each new element, form sums with existing numbers → O(n).
+---
 
-find: Simply check if the value exists in hash table → O(1).
+### 2️⃣ Sorted Array + Two Pointers – O(log n) Add, O(n) Find
 
-Useful if find is called much more frequently than add.
+* Keep numbers in sorted order.
+* `add`: Insert in O(log n) using binary search.
+* `find`: Use **two pointers** to check if a pair sums to target.
+* More space-efficient than storing all pair sums.
 
-2️⃣ Sorted Array + Two Pointers – O(log n) Add, O(n) Find
+---
 
-Keep numbers in sorted order.
+### 3️⃣ Hash Table (Best Trade-off) – O(1) Add, O(n) Find ✅
 
-add: Insert in O(log n) using binary search.
+* Store numbers and their counts in a HashMap.
+* `add`: Increment count → O(1).
+* `find`: Iterate through keys, check if `(target - num)` exists.
 
-find: Use two pointers to check if a pair sums to target.
+  * Special case: if `num == target - num`, need count ≥ 2.
 
-More space-efficient than storing all pair sums.
+---
 
-3️⃣ Hash Table (Best Trade-off) – O(1) Add, O(n) Find ✅
+## 💻 Java Implementation
 
-Store numbers and their counts in a HashMap.
-
-add: Increment count → O(1).
-
-find: Iterate through keys, check if (target - num) exists.
-
-Special case: if num == target - num, need count ≥ 2.
-
-💻 Java Implementation
+```java
 class TwoSum {
     private Map<Integer, Integer> table = new HashMap<>();
     
@@ -86,8 +89,13 @@ class TwoSum {
         return false;
     }
 }
+```
 
-🚀 Python Implementation
+---
+
+## 🚀 Python Implementation
+
+```python
 class TwoSum:
     def __init__(self):
         self.table = {}
@@ -112,17 +120,31 @@ ts.add(3)
 ts.add(5)
 print(ts.find(4))  # True
 print(ts.find(7))  # False
+```
 
-🔮 Follow-up
+---
 
-If find is called very frequently, prefer storing all pair sums.
+## 🔮 Follow-up
 
-If both add and find are balanced, use HashMap approach (best trade-off).
+* If `find` is called **very frequently**, prefer **storing all pair sums**.
+* If both `add` and `find` are balanced, use **HashMap approach** (best trade-off).
+* If input needs to stay **sorted**, use **two pointers**.
 
-If input needs to stay sorted, use two pointers.
+---
 
-✅ OVERALL SUMMARY – Complexity Checklist
-Approach	Add Complexity	Find Complexity	Space	Notes
-Store Pair Sums	O(n)	O(1)	O(n²)	Best for frequent find
-Sorted + Two Pointers	O(log n)	O(n)	O(n)	Balanced but slower find
-HashMap (Best)	O(1)	O(n)	O(n)	Best trade-off ✅
+## ✅ OVERALL SUMMARY – Complexity Checklist
+
+| Approach              | Add Complexity | Find Complexity | Space | Notes                    |
+| --------------------- | -------------- | --------------- | ----- | ------------------------ |
+| Store Pair Sums       | O(n)           | O(1)            | O(n²) | Best for frequent `find` |
+| Sorted + Two Pointers | O(log n)       | O(n)            | O(n)  | Balanced but slower find |
+| HashMap (Best)        | O(1)           | O(n)            | O(n)  | Best trade-off ✅         |
+
+```
+
+---
+
+👉 This is **Day 3** in the **exact same format as Day 2** but adapted for *Two Sum III*.  
+
+Do you also want me to prepare **Day 4 (next LeetCode problem)** in advance in this same README style so you just paste and go?
+```
