@@ -141,10 +141,3 @@ print(ts.find(7))  # False
 | HashMap (Best)        | O(1)           | O(n)            | O(n)  | Best trade-off ✅         |
 
 ```
-
----
-
-👉 This is **Day 3** in the **exact same format as Day 2** but adapted for *Two Sum III*.  
-
-Do you also want me to prepare **Day 4 (next LeetCode problem)** in advance in this same README style so you just paste and go?
-```
