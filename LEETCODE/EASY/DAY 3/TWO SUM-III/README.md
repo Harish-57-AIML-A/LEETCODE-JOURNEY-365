@@ -122,5 +122,3 @@ System.out.println(obj.find(7)); // false
 * Useful for problems requiring **frequent add + occasional search**.
 
 ---
-
-
