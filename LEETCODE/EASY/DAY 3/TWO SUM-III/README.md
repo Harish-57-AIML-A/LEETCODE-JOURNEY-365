@@ -93,38 +93,6 @@ class TwoSum {
     }
 }
 ```
-Perfect 👍 thanks for clarifying.
-You want **Day 3** (Problem: *Two Sum III – Data Structure Design*) in the **exact same professional README format as Day 2**.
-
-Here’s your Day 3 README:
-
-````markdown
-# 📌 Problem 3: Two Sum III – Data Structure Design  
-
-🔗 **LeetCode Link:** [Two Sum III](https://leetcode.com/problems/two-sum-iii-data-structure-design/)  
-📊 **Difficulty:** Easy  
-🔥 **Frequency:** Medium  
-
----
-
-## 📝 Problem Statement  
-Design and implement a **TwoSum** class that supports the following operations:  
-
-- `add(input)` → Add the number `input` to an internal data structure.  
-- `find(value)` → Find if there exists **any pair of numbers** whose sum is equal to `value`.  
-
----
-
-## 📖 Example  
-
-**Input / Operations:**  
-```text
-add(1)
-add(3)
-add(5)
-find(4) → true
-find(7) → false
-````
 
 **Explanation:**
 
