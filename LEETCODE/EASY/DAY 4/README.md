@@ -1,9 +1,5 @@
-Perfect 👍 thanks for clarifying.
-You want **Day 4** (Problem: *Valid Palindrome*) in the **exact same professional README format as Day 2 and Day 3**.
-
 Here’s your Day 4 README:
 
-````markdown
 # 📌 Problem 4: Valid Palindrome  
 
 🔗 **LeetCode Link:** [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)  
@@ -108,11 +104,3 @@ print(isPalindrome("race a car"))  # False
 | ---------------------------- | --------------- | ---------------- | ---------------------------- |
 | Preprocess + Reverse Compare | O(n)            | O(n)             | Simple but uses extra space  |
 | Two Pointers (Best)          | O(n)            | O(1)             | Efficient and optimal ✅      |
-
-````
-
----
-
-👉 This is **Day 4** in the **exact same README format** as your Day 2 and Day 3.
-
-Do you also want me to prep **Day 5 (next LeetCode problem)** in this same style so you can keep the streak going?
