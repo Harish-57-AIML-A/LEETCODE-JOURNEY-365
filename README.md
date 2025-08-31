@@ -9,3 +9,9 @@ https://leetcode.com/problems/two-sum/description/
 
 DAY 02 - [29 AUGUST 2025] - [FRIDAY]
 https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
+
+DAY 03 - [30 AUGUST 2025] - [SATURDAY]
+https://leetcode.com/problems/two-sum-iii-data-structure-design/description/
+
+DAY 04 - [31 AUGUST 2025] - [SUNDAY]
+https://leetcode.com/problems/valid-palindrome/description/
