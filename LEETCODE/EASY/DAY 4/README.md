@@ -1,5 +1,3 @@
-Here’s your Day 4 README:
-
 # 📌 Problem 4: Valid Palindrome  
 
 🔗 **LeetCode Link:** [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)  
