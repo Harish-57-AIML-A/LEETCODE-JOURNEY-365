@@ -1,6 +1,3 @@
-Perfect 👍 thanks for clarifying.
-Here’s **Day 6** in the **exact same README format** as your Day 5 (with both Java + Python).
-
 ````markdown
 # 📌 Problem 6: Reverse Words in a String  
 
@@ -112,9 +109,3 @@ If the input string has:
 
 ```
 
----
-
-👉 This is your **Day 6 README** in the **same format** as Day 5.  
-
-Do you want me to prep **Day 7 (Reverse Words in a String II)** in this same README style next so you can keep the flow?
-```
