@@ -1,4 +1,8 @@
-📌 Problem 6: Reverse Words in a String  
+Perfect 👍 thanks for clarifying.
+Here’s **Day 6** in the **exact same README format** as your Day 5 (with both Java + Python).
+
+````markdown
+# 📌 Problem 6: Reverse Words in a String  
 
 🔗 **LeetCode Link:** [Reverse Words in a String](https://oj.leetcode.com/problems/reverse-words-in-a-string/)  
 📊 **Difficulty:** Medium  
@@ -22,30 +26,37 @@ Given an input string `s`, reverse the string **word by word**.
 **Input:**  
 ```text
 s = "  the sky   is blue  "
-Output:
+````
 
-text
-Copy code
+**Output:**
+
+```text
 "blue is sky the"
-Explanation:
-After trimming and reducing multiple spaces, the words reversed are "blue is sky the". ✅
+```
 
-⚙️ Approaches
-1️⃣ Two-Pass Solution – O(n) Time, O(n) Space
-First pass → Split string into words.
+**Explanation:**
+After trimming and reducing multiple spaces, the words reversed are `"blue is sky the"`. ✅
 
-Second pass → Collect words in reverse order.
+---
 
-2️⃣ One-Pass Reverse Iteration – O(n) Time, O(n) Space ✅ Best Solution
-Iterate string in reverse order.
+## ⚙️ Approaches
 
-Track each word’s begin and end.
+### 1️⃣ Two-Pass Solution – O(n) Time, O(n) Space
 
-Append to result on the fly.
+* First pass → Split string into words.
+* Second pass → Collect words in reverse order.
 
-💻 Java Implementation
-java
-Copy code
+### 2️⃣ One-Pass Reverse Iteration – O(n) Time, O(n) Space ✅ Best Solution
+
+* Iterate string **in reverse order**.
+* Track each word’s **begin** and **end**.
+* Append to result on the fly.
+
+---
+
+## 💻 Java Implementation
+
+```java
 public String reverseWords(String s) {
     StringBuilder reversed = new StringBuilder();
     int j = s.length();
@@ -61,9 +72,13 @@ public String reverseWords(String s) {
     }
     return reversed.toString();
 }
-🚀 Python Implementation
-python
-Copy code
+```
+
+---
+
+## 🚀 Python Implementation
+
+```python
 def reverseWords(s: str) -> str:
     words = s.strip().split()
     return " ".join(reversed(words))
@@ -71,18 +86,35 @@ def reverseWords(s: str) -> str:
 # Example Usage
 print(reverseWords("  the sky   is blue  "))  # "blue is sky the"
 print(reverseWords("hello world"))  # "world hello"
-🔮 Follow-up
+```
+
+---
+
+## 🔮 Follow-up
+
 If the input string has:
 
-No leading/trailing spaces
+* **No leading/trailing spaces**
+* Words separated by a **single space**
 
-Words separated by a single space
+👉 You can solve it **in-place** without extra space.
+(This is covered in **Day 7 - Reverse Words in a String II**).
 
-👉 You can solve it in-place without extra space.
-(This is covered in Day 7 - Reverse Words in a String II).
+---
 
-✅ OVERALL SUMMARY – Complexity Checklist
-Approach	Time Complexity	Space Complexity	Notes
-Split + Reverse	O(n)	O(n)	Simple & clean
-Reverse Iteration (Best)	O(n)	O(n)	Efficient one-pass solution ✅
-In-place (Follow-up)	O(n)	O(1)	Possible if constraints apply
+## ✅ OVERALL SUMMARY – Complexity Checklist
+
+| Approach                 | Time Complexity | Space Complexity | Notes                         |
+| ------------------------ | --------------- | ---------------- | ----------------------------- |
+| Split + Reverse          | O(n)            | O(n)             | Simple & clean                |
+| Reverse Iteration (Best) | O(n)            | O(n)             | Efficient one-pass solution ✅ |
+| In-place (Follow-up)     | O(n)            | O(1)             | Possible if constraints apply |
+
+```
+
+---
+
+👉 This is your **Day 6 README** in the **same format** as Day 5.  
+
+Do you want me to prep **Day 7 (Reverse Words in a String II)** in this same README style next so you can keep the flow?
+```
