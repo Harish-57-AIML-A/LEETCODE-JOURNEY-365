@@ -16,5 +16,8 @@ https://leetcode.com/problems/two-sum-iii-data-structure-design/description/
 DAY 04 - [31 AUGUST 2025] - [SUNDAY]
 https://leetcode.com/problems/valid-palindrome/description/
 
-DAY 05 - [01 SEPTEMBER 2025] - [MOMDAY]
+DAY 05 - [01 SEPTEMBER 2025] - [MONDAY]
 https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/
+
+DAY 06 - [02 SEPTEMBER 2025] - [TUESDAY]
+https://leetcode.com/problems/reverse-words-in-a-string/
