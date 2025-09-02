@@ -1,55 +1,51 @@
-📌 Problem 6: Reverse Words in a String
+📌 Problem 6: Reverse Words in a String  
 
-🔗 LeetCode Link: Reverse Words in a String
+🔗 **LeetCode Link:** [Reverse Words in a String](https://oj.leetcode.com/problems/reverse-words-in-a-string/)  
+📊 **Difficulty:** Medium  
+🔥 **Frequency:** High  
 
-📊 Difficulty: Medium
-🔥 Frequency: High
+---
 
-📝 Problem Statement
+## 📝 Problem Statement  
+Given an input string `s`, reverse the string **word by word**.  
 
-Given an input string s, reverse the string word by word.
+👉 Notes:  
+- A word is defined as a sequence of non-space characters.  
+- Multiple spaces between words should be reduced to a **single space**.  
+- The reversed string should not contain leading or trailing spaces.  
+- Assume no tabs or newline characters.  
 
-👉 Notes:
+---
 
-A word is a sequence of non-space characters.
+## 📖 Example  
 
-Input may contain leading/trailing spaces → remove them in result.
-
-Multiple spaces between words → reduce to a single space in result.
-
-📖 Example
-
-Input:
-
-s = "  the sky   is blue "
-
-
+**Input:**  
+```text
+s = "  the sky   is blue  "
 Output:
 
+text
+Copy code
 "blue is sky the"
-
-
 Explanation:
-After trimming spaces and reversing → "blue is sky the". ✅
+After trimming and reducing multiple spaces, the words reversed are "blue is sky the". ✅
 
 ⚙️ Approaches
-1️⃣ Two-Pass Approach – O(n) Time, O(n) Space
+1️⃣ Two-Pass Solution – O(n) Time, O(n) Space
+First pass → Split string into words.
 
-Split string by spaces.
+Second pass → Collect words in reverse order.
 
-Filter out empty entries.
+2️⃣ One-Pass Reverse Iteration – O(n) Time, O(n) Space ✅ Best Solution
+Iterate string in reverse order.
 
-Join words in reverse order.
+Track each word’s begin and end.
 
-2️⃣ One-Pass Reverse Iteration – O(n) Time, O(n) Space ✅ (More Optimal)
-
-Iterate from end to start.
-
-Track word boundaries.
-
-Append words directly in reverse order.
+Append to result on the fly.
 
 💻 Java Implementation
+java
+Copy code
 public String reverseWords(String s) {
     StringBuilder reversed = new StringBuilder();
     int j = s.length();
@@ -65,23 +61,28 @@ public String reverseWords(String s) {
     }
     return reversed.toString();
 }
-
 🚀 Python Implementation
+python
+Copy code
 def reverseWords(s: str) -> str:
     words = s.strip().split()
     return " ".join(reversed(words))
 
 # Example Usage
-print(reverseWords("  the sky   is blue "))  # "blue is sky the"
-print(reverseWords("hello world"))           # "world hello"
-
+print(reverseWords("  the sky   is blue  "))  # "blue is sky the"
+print(reverseWords("hello world"))  # "world hello"
 🔮 Follow-up
+If the input string has:
 
-If input string contains no leading/trailing spaces and words are separated by a single space,
-👉 The problem can be solved in-place without allocating extra space (see Problem 7: Reverse Words in a String II).
+No leading/trailing spaces
+
+Words separated by a single space
+
+👉 You can solve it in-place without extra space.
+(This is covered in Day 7 - Reverse Words in a String II).
 
 ✅ OVERALL SUMMARY – Complexity Checklist
 Approach	Time Complexity	Space Complexity	Notes
-Split + Reverse (Simple)	O(n)	O(n)	Easiest, uses extra array
-One-Pass Reverse (Better)	O(n)	O(n)	Avoids unnecessary splitting
-In-Place (Follow-up)	O(n)	O(1)	Possible if constraints allow
+Split + Reverse	O(n)	O(n)	Simple & clean
+Reverse Iteration (Best)	O(n)	O(n)	Efficient one-pass solution ✅
+In-place (Follow-up)	O(n)	O(1)	Possible if constraints apply
