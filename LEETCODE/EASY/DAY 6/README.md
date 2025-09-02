@@ -1,5 +1,4 @@
-````markdown
-# 📌 Problem 6: Reverse Words in a String  
+📌 Problem 6: Reverse Words in a String  
 
 🔗 **LeetCode Link:** [Reverse Words in a String](https://oj.leetcode.com/problems/reverse-words-in-a-string/)  
 📊 **Difficulty:** Medium  
