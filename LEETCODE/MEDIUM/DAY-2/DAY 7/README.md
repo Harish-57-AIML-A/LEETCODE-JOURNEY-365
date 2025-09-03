@@ -1,47 +1,59 @@
-Problem 7: Reverse Words in a String II
+Perfect 👍 Here’s **Day 7** written in a **proper README.md format** — ready to paste directly into your GitHub repo without any formatting issues.
 
-🔗 LeetCode Link: Reverse Words in a String II
+---
 
-📊 Difficulty: Medium
-🔥 Frequency: N/A
+# 📌 Problem 7: Reverse Words in a String II
 
-📝 Problem Statement
+🔗 **LeetCode Link:** [Reverse Words in a String II](https://oj.leetcode.com/problems/reverse-words-in-a-string-ii/)
+📊 **Difficulty:** Medium
+🔥 **Frequency:** N/A
 
-Similar to [6. Reverse Words in a String], but with the following constraints:
+---
+
+## 📝 Problem Statement
+
+Similar to **\[6. Reverse Words in a String]**, but with the following constraints:
 
 👉 Notes:
 
-The input string does not contain leading or trailing spaces.
+* The input string does **not** contain leading or trailing spaces.
+* Words are always separated by a **single space**.
+* Could you do it **in-place** without allocating extra space?
 
-Words are always separated by a single space.
+---
 
-Could you do it in-place without allocating extra space?
+## 📖 Example
 
-📖 Example
+**Input:**
 
-Input:
-
+```text
 s = "the sky is blue"
+```
 
+**Output:**
 
-Output:
-
+```text
 "blue is sky the"
+```
 
+**Explanation:**
+The words are reversed **in-place**, using O(1) extra space. ✅
 
-Explanation:
-The words are reversed in-place, using O(1) extra space. ✅
+---
 
-⚙️ Approaches
-1️⃣ In-place Reverse – O(n) Time, O(1) Space ✅
+## ⚙️ Approaches
 
-Reverse the entire string → wn' … w2' w1'.
+### 1️⃣ In-place Reverse – O(n) Time, O(1) Space ✅
 
-Reverse each word individually → wn … w2 w1.
+* Reverse the entire string → `wn' … w2' w1'`.
+* Reverse each word individually → `wn … w2 w1`.
+* Achieves the result without extra space.
 
-Achieves the result without extra space.
+---
 
-💻 Java Implementation
+## 💻 Java Implementation
+
+```java
 public void reverseWords(char[] s) {
     reverse(s, 0, s.length);
     for (int i = 0, j = 0; j <= s.length; j++) {
@@ -59,8 +71,13 @@ private void reverse(char[] s, int begin, int end) {
         s[end - i - 1] = temp;
     }
 }
+```
 
-🚀 Python Implementation
+---
+
+## 🚀 Python Implementation
+
+```python
 def reverseWords(s: list) -> None:
     def reverse(l, r):
         while l < r:
@@ -81,28 +98,41 @@ def reverseWords(s: list) -> None:
 chars = list("the sky is blue")
 reverseWords(chars)
 print("".join(chars))  # "blue is sky the"
+```
 
-🔮 Follow-up
-Challenge 1:
+---
 
-Implement the two-pass solution without using the library’s split function.
+## 🔮 Follow-up
 
-Challenge 2:
+### Challenge 1:
 
-Rotate an array to the right by k steps in-place without allocating extra space.
+Implement the **two-pass solution** without using the library’s `split` function.
+
+### Challenge 2:
+
+Rotate an array to the right by `k` steps in-place without allocating extra space.
 
 👉 Example:
-For k = 3, the array
+For `k = 3`, the array
 
+```text
 [0, 1, 2, 3, 4, 5, 6]
-
+```
 
 becomes
 
+```text
 [4, 5, 6, 0, 1, 2, 3]
+```
 
-✅ OVERALL SUMMARY – Complexity Checklist
-Approach	Time Complexity	Space Complexity	Notes
-In-place Reverse	O(n)	O(1)	Efficient, no extra memory used ✅
-Two-Pass (No split)	O(n)	O(1)	Alternate method without library
-Array Rotation	O(n)	O(1)	Related challenge extension
+---
+
+## ✅ OVERALL SUMMARY – Complexity Checklist
+
+| Approach            | Time Complexity | Space Complexity | Notes                             |
+| ------------------- | --------------- | ---------------- | --------------------------------- |
+| In-place Reverse    | O(n)            | O(1)             | Efficient, no extra memory used ✅ |
+| Two-Pass (No split) | O(n)            | O(1)             | Alternate method without library  |
+| Array Rotation      | O(n)            | O(1)             | Related challenge extension       |
+
+---
