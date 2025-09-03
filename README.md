@@ -21,3 +21,6 @@ https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string
 
 DAY 06 - [02 SEPTEMBER 2025] - [TUESDAY]
 https://leetcode.com/problems/reverse-words-in-a-string/
+
+DAY 07 - [03 SEPTEMBER 2025] - [WEDNESDAY]
+https://leetcode.com/problems/reverse-string-ii/description/
