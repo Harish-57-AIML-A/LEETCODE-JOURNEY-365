@@ -1,7 +1,4 @@
-Got it 🚀 You want the **README.md** text content itself (in proper GitHub aesthetic style, with icons, headings, formatting, links) that you can directly paste into your repo. Here’s the **professional and unique aesthetic README text** for your **UI Screen of Total Problems**:
-
-```markdown
-# 🚀 LEETCODE-JOURNEY-365
+🚀 LEETCODE-JOURNEY-365
 
 > *Starting From Zero With An Aim To Become 1% Better Everyday In Coding By Sharpening My Problem-Solving Skills, Building Coding Discipline, And Documenting My Learning Journey Transparently.*  
 > *Whether It's Arrays, Graphs, Dynamic Programming, Or Recursion, Every Commit Tells A Story Of Persistence, Progress, And The Pursuit Of Excellence.* ✨
@@ -51,6 +48,3 @@ Got it 🚀 You want the **README.md** text content itself (in proper GitHub aes
 ⚡ *365 Days → 365 Problems → A Stronger Version Of Me.*  
 
 ---
-```
-
-Would you like me to also **add emojis/icons for each topic type** (like 🔢 Arrays, 🔄 Strings, 📊 DP, 🌲 Trees, 🔗 Graphs) so that later when your list grows, it looks even more **colorful and categorized**?
