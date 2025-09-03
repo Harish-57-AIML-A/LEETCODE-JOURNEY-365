@@ -9,4 +9,3 @@ def twoSum(numbers, target):
         else:
             return [i + 1, j + 1]
     raise ValueError("No two sum solution")
-
