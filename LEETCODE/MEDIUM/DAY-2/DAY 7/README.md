@@ -1,36 +1,40 @@
- 📌 Problem 7: Reverse Words in a String II  
+Problem 7: Reverse Words in a String II
 
-🔗 **LeetCode Link:** [Reverse Words in a String II](https://oj.leetcode.com/problems/reverse-words-in-a-string-ii/)  
-📊 **Difficulty:** Medium  
-🔥 **Frequency:** N/A  
+🔗 LeetCode Link: Reverse Words in a String II
 
----
+📊 Difficulty: Medium
+🔥 Frequency: N/A
 
-## 📝 Problem Statement  
-Similar to **[6. Reverse Words in a String]**, but with the following constraints:  
+📝 Problem Statement
 
-👉 Notes:  
-- The input string does **not** contain leading or trailing spaces.  
-- Words are always separated by a **single space**.  
-- Could you do it **in-place** without allocating extra space?  
+Similar to [6. Reverse Words in a String], but with the following constraints:
 
----
+👉 Notes:
 
-## 📖 Example  
+The input string does not contain leading or trailing spaces.
 
-**Input:**  
-```text
+Words are always separated by a single space.
+
+Could you do it in-place without allocating extra space?
+
+📖 Example
+
+Input:
+
 s = "the sky is blue"
+
+
 Output:
 
-text
-Copy code
 "blue is sky the"
+
+
 Explanation:
 The words are reversed in-place, using O(1) extra space. ✅
 
 ⚙️ Approaches
 1️⃣ In-place Reverse – O(n) Time, O(1) Space ✅
+
 Reverse the entire string → wn' … w2' w1'.
 
 Reverse each word individually → wn … w2 w1.
@@ -38,8 +42,6 @@ Reverse each word individually → wn … w2 w1.
 Achieves the result without extra space.
 
 💻 Java Implementation
-java
-Copy code
 public void reverseWords(char[] s) {
     reverse(s, 0, s.length);
     for (int i = 0, j = 0; j <= s.length; j++) {
@@ -57,9 +59,8 @@ private void reverse(char[] s, int begin, int end) {
         s[end - i - 1] = temp;
     }
 }
+
 🚀 Python Implementation
-python
-Copy code
 def reverseWords(s: list) -> None:
     def reverse(l, r):
         while l < r:
@@ -80,24 +81,26 @@ def reverseWords(s: list) -> None:
 chars = list("the sky is blue")
 reverseWords(chars)
 print("".join(chars))  # "blue is sky the"
+
 🔮 Follow-up
 Challenge 1:
+
 Implement the two-pass solution without using the library’s split function.
 
 Challenge 2:
+
 Rotate an array to the right by k steps in-place without allocating extra space.
 
 👉 Example:
 For k = 3, the array
 
-text
-Copy code
 [0, 1, 2, 3, 4, 5, 6]
+
+
 becomes
 
-text
-Copy code
 [4, 5, 6, 0, 1, 2, 3]
+
 ✅ OVERALL SUMMARY – Complexity Checklist
 Approach	Time Complexity	Space Complexity	Notes
 In-place Reverse	O(n)	O(1)	Efficient, no extra memory used ✅
