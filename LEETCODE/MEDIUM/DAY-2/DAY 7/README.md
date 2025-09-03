@@ -1,8 +1,4 @@
-Perfect 👍 Here’s **Day 7** written in a **proper README.md format** — ready to paste directly into your GitHub repo without any formatting issues.
-
----
-
-# 📌 Problem 7: Reverse Words in a String II
+📌 Problem 7: Reverse Words in a String II
 
 🔗 **LeetCode Link:** [Reverse Words in a String II](https://oj.leetcode.com/problems/reverse-words-in-a-string-ii/)
 📊 **Difficulty:** Medium
