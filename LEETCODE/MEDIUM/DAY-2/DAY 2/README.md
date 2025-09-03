@@ -1,10 +1,4 @@
-Got it 👍 I’ll rewrite your **Two Sum II – Input Array Is Sorted** problem into the **same clean README.md format** you’ve been using for all the challenge days.
-
-Here’s the polished version ⬇️
-
----
-
-# 📌 Problem 2: Two Sum II – Input Array Is Sorted
+📌 Problem 2: Two Sum II – Input Array Is Sorted
 
 🔗 **LeetCode Link:** [Two Sum II](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
 📊 **Difficulty:** Medium
@@ -139,5 +133,3 @@ print(twoSum([2,7,11,15], 9))  # [1, 2]
 | Two Pointers  | O(n)            | O(1)             | Best & most efficient ✅ |
 
 ---
-
-Do you want me to now **rebuild Day 1 (Two Sum)** in this same polished README format too, so your challenge repo starts consistently from Day 1?
