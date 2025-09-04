@@ -48,7 +48,7 @@
 ---
 
 ## 🏆 Vision  
-💡 *This repository is not just about solving problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
+💡 *This repository is not just about organizing problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
 
 ⚡ *365 Days → 365 Problems → A Stronger Version Of Me.*  
 
