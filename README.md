@@ -42,6 +42,11 @@
 
 ---
 
+### ✅ DAY 08 - [04 SEPTEMBER 2025] - *Thursday*
+🔗 [String To Integer](https://leetcode.com/problems/string-to-integer-atoi/description/)
+
+---
+
 ## 🏆 Vision  
 💡 *This repository is not just about solving problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
 
