@@ -1,5 +1,4 @@
-````markdown
-# 📌 Problem 3: Two Sum III – Data Structure Design  
+Problem 3: Two Sum III – Data Structure Design  
 
 🔗 **LeetCode Link:** [Two Sum III](https://leetcode.com/problems/two-sum-iii-data-structure-design/)  
 📊 **Difficulty:** Easy  
