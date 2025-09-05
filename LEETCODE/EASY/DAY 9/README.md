@@ -1,4 +1,4 @@
-🚀 Day 9 – LeetCode: Valid Number
+Day 9 – LeetCode: Valid Number
 
 **Problem Link**: [Valid Number](https://leetcode.com/problems/valid-number/)
 **Difficulty**: 🟢 Easy
@@ -118,7 +118,4 @@ public class ValidNumber {
 * Separate handling of **whitespaces** is crucial.
 
 ---
-
-
-Do you want me to also make a **fancy markdown version with emojis + collapsible sections (like `<details>` blocks)** so your README looks **more aesthetic** for GitHub?
 
