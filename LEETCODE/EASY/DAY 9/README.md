@@ -1,5 +1,3 @@
-Day 9 – LeetCode: Valid Number
-
 **🔗 Problem Link**: [Valid Number](https://leetcode.com/problems/valid-number/)
 **📊 Difficulty**: 🟢 Easy
 **🔥 Frequency**: 🔻 Low
@@ -145,12 +143,6 @@ O(1)
 
 ---
 
-Perfect 👍 you want the **Complexity Analysis** to be **structured**, clean, and aesthetic — not just text inside quotes.
-
-Here’s how we can format it for **Day 9 – Valid Number**:
-
----
-
 ## 📦 Complexity Analysis
 
 | Language  | Time Complexity | Space Complexity | Explanation                                           |
@@ -160,6 +152,5 @@ Here’s how we can format it for **Day 9 – Valid Number**:
 
 ---
 
-✅ This format gives a **side-by-side structured view** with icons, code-like boxes for complexity, and a clear explanation.
 
 ---
