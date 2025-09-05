@@ -1,5 +1,7 @@
 **🔗 Problem Link**: [Valid Number](https://leetcode.com/problems/valid-number/)
+
 **📊 Difficulty**: 🟢 Easy
+
 **🔥 Frequency**: 🔻 Low
 
 ---
@@ -113,27 +115,6 @@ public class Solution {
     }
 }
 ```
-
----
-
-## 📦 Complexity Analysis
-
-> 🕒 **Time Complexity**
-
-```
-O(n)
-✔ Each character is checked at most once
-```
-
-> 💾 **Space Complexity**
-
-```
-O(1)
-✔ Uses only pointers/flags
-```
-
----
-
 ## 🌟 Key Takeaways
 
 * Trim **leading/trailing spaces**
