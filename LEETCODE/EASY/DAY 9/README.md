@@ -115,6 +115,9 @@ public class Solution {
     }
 }
 ```
+
+---
+
 ## 🌟 Key Takeaways
 
 * Trim **leading/trailing spaces**
