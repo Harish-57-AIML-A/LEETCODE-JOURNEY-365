@@ -48,6 +48,11 @@
 
 ---
 
+### ✅ DAY 09 - [05 SEPTEMBER 2025] - *Friday*
+🔗 [Valid Number](https://leetcode.com/problems/valid-number/description/)
+
+---
+
 ## 🏆 Vision  
 💡 *This repository is not just about organizing problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
 
