@@ -53,6 +53,11 @@
 
 ---
 
+### ✅ DAY 10 - [06 SEPETEMBER 2025] - *Saturday*
+🔗 [Longest Subscription Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)
+
+---
+
 ## 🏆 Vision  
 💡 *This repository is not just about organizing problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
 
