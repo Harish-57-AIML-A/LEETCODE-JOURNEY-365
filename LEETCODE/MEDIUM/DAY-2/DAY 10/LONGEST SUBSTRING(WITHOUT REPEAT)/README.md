@@ -1,7 +1,9 @@
 🌟 Day 10: Longest Substring Without Repeating Characters
 
 📌 **Difficulty**: 🟠 Medium
+
 📌 **Frequency**: 🔄 Medium
+
 📌 **Link**: [🔗 LeetCode Problem](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
 ---
