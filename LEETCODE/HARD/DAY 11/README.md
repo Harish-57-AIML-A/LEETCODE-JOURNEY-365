@@ -1,59 +1,67 @@
-Day 11: Container With Most Water
+Day 11: Longest Substring with At Most Two Distinct Characters
 
-📌 **Difficulty**: 🟠 Medium
-
-📌 **Frequency**: 🔄 High
-
-📌 **Link**: [🔗 LeetCode Problem](https://leetcode.com/problems/container-with-most-water/)
+📌 **Difficulty**: 🔴 Hard
+📌 **Frequency**: 📉 Rare
+📌 **Link**: [🔗 LeetCode Problem](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)
 
 ---
 
 ## 📝 Problem Statement
 
-You are given an integer array `height` of length `n`.
-Each element represents the **height of a vertical line** on the x-axis.
+Given a string `s`, find the **length of the longest substring** `T` that contains **at most two distinct characters**.
 
-💡 **Task**: Find two lines that together with the x-axis form a container, such that the container holds the **most water**.
+### 🔹 Example 1
 
-* ✅ Input: `height = [1,8,6,2,5,4,8,3,7]`
-* ✅ Output: `49`
-* ✅ Explanation: The lines at indices `1` and `8` form the container with **area = min(8,7) × (8-1) = 49**.
+* Input: `s = "eceba"`
+* Output: `3`
+* Explanation: The substring `"ece"` is the longest with at most two distinct characters.
+
+### 🔹 Example 2
+
+* Input: `s = "ccaabbb"`
+* Output: `5`
+* Explanation: The substring `"aabbb"` is the longest with at most two distinct characters.
 
 ---
 
 ## 💡 Approach
 
-* Start with **two pointers**: one at the leftmost (`l`) and one at the rightmost (`r`).
-* At each step, calculate the **area** formed between the two lines.
-* Move the pointer pointing to the **shorter line**, since moving the taller line won’t increase area.
-* Continue until both pointers meet.
+* Use the **sliding window technique** with two pointers (`i`, `j`).
+* Maintain a **frequency map** of characters inside the current window.
+* If the window exceeds **two distinct characters**, shrink it from the left until the condition is restored.
+* Track the maximum window size during iteration.
 
-Efficiency:
-⚡ Each index is checked **only once**, so runtime is **O(n)**.
+⚡ This ensures each character is processed at most twice → runtime **O(n)**.
 
 ---
 
 ## 🐍 Python Solution
 
 ```python
-def maxArea(height):
-    l, r = 0, len(height) - 1
-    max_area = 0
-
-    while l < r:
-        area = min(height[l], height[r]) * (r - l)
-        max_area = max(max_area, area)
-
-        if height[l] < height[r]:
-            l += 1
-        else:
-            r -= 1
-
-    return max_area
+def lengthOfLongestSubstringTwoDistinct(s: str) -> int:
+    from collections import defaultdict
+    
+    count = defaultdict(int)
+    i = 0
+    max_len = 0
+    
+    for j, ch in enumerate(s):
+        count[ch] += 1
+        
+        while len(count) > 2:
+            count[s[i]] -= 1
+            if count[s[i]] == 0:
+                del count[s[i]]
+            i += 1
+        
+        max_len = max(max_len, j - i + 1)
+    
+    return max_len
 
 
 # 🚀 Example Run
-print(maxArea([1,8,6,2,5,4,8,3,7]))  # Output: 49
+print(lengthOfLongestSubstringTwoDistinct("eceba"))   # Output: 3
+print(lengthOfLongestSubstringTwoDistinct("ccaabbb")) # Output: 5
 ```
 
 ---
@@ -61,27 +69,32 @@ print(maxArea([1,8,6,2,5,4,8,3,7]))  # Output: 49
 ## ☕ Java Solution
 
 ```java
+import java.util.*;
+
 class Solution {
-    public int maxArea(int[] height) {
-        int l = 0, r = height.length - 1;
-        int maxArea = 0;
+    public int lengthOfLongestSubstringTwoDistinct(String s) {
+        Map<Character, Integer> map = new HashMap<>();
+        int i = 0, maxLen = 0;
 
-        while (l < r) {
-            int area = Math.min(height[l], height[r]) * (r - l);
-            maxArea = Math.max(maxArea, area);
+        for (int j = 0; j < s.length(); j++) {
+            map.put(s.charAt(j), map.getOrDefault(s.charAt(j), 0) + 1);
 
-            if (height[l] < height[r]) {
-                l++;
-            } else {
-                r--;
+            while (map.size() > 2) {
+                map.put(s.charAt(i), map.get(s.charAt(i)) - 1);
+                if (map.get(s.charAt(i)) == 0) {
+                    map.remove(s.charAt(i));
+                }
+                i++;
             }
+            maxLen = Math.max(maxLen, j - i + 1);
         }
-        return maxArea;
+        return maxLen;
     }
 
     public static void main(String[] args) {
         Solution sol = new Solution();
-        System.out.println(sol.maxArea(new int[]{1,8,6,2,5,4,8,3,7})); // 49
+        System.out.println(sol.lengthOfLongestSubstringTwoDistinct("eceba"));   // 3
+        System.out.println(sol.lengthOfLongestSubstringTwoDistinct("ccaabbb")); // 5
     }
 }
 ```
@@ -90,16 +103,17 @@ class Solution {
 
 ## 📊 Complexity Analysis
 
-| 🔎 Aspect               | 🐌 Brute Force Approach              | ⚡ Optimized Two-Pointer Approach |
-| ----------------------- | ------------------------------------ | -------------------------------- |
-| ⏱ **Time Complexity**   | **O(n²)** → Check all pairs of lines | **O(n)** → Each line visited ≤ 1 |
-| 💾 **Space Complexity** | **O(1)** → Only variables            | **O(1)** → Two pointers only     |
+| 🔎 Aspect               | 🐌 Brute Force                                           | ⚡ Sliding Window (Optimized)                            |
+| ----------------------- | -------------------------------------------------------- | ------------------------------------------------------- |
+| ⏱ **Time Complexity**   | `O(n³)` → Generate all substrings & check distinct chars | `O(n)` → Each character processed at most twice         |
+| 💾 **Space Complexity** | `O(n)` → Extra storage for substring checks              | `O(1)` or `O(k)` → HashMap for at most 2 distinct chars |
 
 ---
 
 ✨ **Key Takeaways**
 
-* 🐢 Brute Force → check every line pair → very slow.
-* ⚡ Two-Pointer → greedy approach → optimal & linear.
+* 🚫 Brute force is too slow (`O(n³)`).
+* ⚡ Sliding Window + HashMap makes it efficient (`O(n)`).
+* 🔑 This problem generalizes to **"Longest Substring with At Most K Distinct Characters"**.
 
 ---
