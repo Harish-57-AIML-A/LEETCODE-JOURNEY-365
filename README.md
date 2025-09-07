@@ -58,6 +58,11 @@
 
 ---
 
+### ✅ DAY 11 - [07 SEPETEMBER 2025] - *Sunday*
+🔗 [Longest Substring with At Most Two Distinct Character](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/description/)
+
+---
+
 ## 🏆 Vision  
 💡 *This repository is not just about organizing problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
 
