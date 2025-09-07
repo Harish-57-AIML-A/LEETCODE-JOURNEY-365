@@ -1,7 +1,9 @@
 Day 11: Longest Substring with At Most Two Distinct Characters
 
 📌 **Difficulty**: 🔴 Hard
+
 📌 **Frequency**: 📉 Rare
+
 📌 **Link**: [🔗 LeetCode Problem](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)
 
 ---
