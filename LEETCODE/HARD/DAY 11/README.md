@@ -1,7 +1,9 @@
 Day 11: Container With Most Water
 
 📌 **Difficulty**: 🟠 Medium
+
 📌 **Frequency**: 🔄 High
+
 📌 **Link**: [🔗 LeetCode Problem](https://leetcode.com/problems/container-with-most-water/)
 
 ---
