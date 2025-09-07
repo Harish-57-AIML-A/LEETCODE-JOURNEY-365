@@ -103,6 +103,3 @@ class Solution {
 * ⚡ Two-Pointer → greedy approach → optimal & linear.
 
 ---
-
-👉 Do you want me to also prepare a **Day 11 sliding illustration (ASCII or diagram of shrinking container)** 🎨 so it matches your aesthetic GitHub series?
-
