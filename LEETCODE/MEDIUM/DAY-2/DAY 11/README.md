@@ -1,7 +1,9 @@
 🌟 Day 12: Missing Ranges
 
 📌 **Difficulty**: 🟠 Medium
+
 📌 **Frequency**: 📉 N/A
+
 📌 **Link**: [🔗 LeetCode Problem](https://leetcode.com/problems/missing-ranges/)
 
 ---
