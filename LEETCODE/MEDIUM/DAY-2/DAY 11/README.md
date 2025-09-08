@@ -2,7 +2,7 @@
 
 📌 **Difficulty**: 🟠 Medium
 
-📌 **Frequency**: 📉 N/A
+📌 **Frequency**: 📉 Medium
 
 📌 **Link**: [🔗 LeetCode Problem](https://leetcode.com/problems/missing-ranges/)
 
