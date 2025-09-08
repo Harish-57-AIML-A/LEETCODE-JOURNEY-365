@@ -63,6 +63,11 @@
 
 ---
 
+### ✅ DAY 12 - [08 SEPTEMBER 2025] - *Monday*
+🔗 [Missing Ranges](https://leetcode.com/problems/missing-ranges/description/)
+
+---
+
 ## 🏆 Vision  
 💡 *This repository is not just about organizing problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
 
