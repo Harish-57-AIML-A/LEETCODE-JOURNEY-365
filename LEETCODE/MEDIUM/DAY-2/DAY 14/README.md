@@ -1,7 +1,9 @@
 🌟 Day 14 - One Edit Distance
 
 📌 **Difficulty**: 🟠 Medium
-📌 **Frequency**: 📉 N/A
+
+📌 **Frequency**: 📉 Medium
+
 📌 **Link**: [🔗 LeetCode Problem](https://leetcode.com/problems/one-edit-distance/)
 
 ---
