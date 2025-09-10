@@ -73,6 +73,11 @@
 
 ---
 
+### ✅ DAY 14 - [10 SEPTEMBER 2025] - *Wednesday*
+🔗 [One Edit Distance](https://leetcode.com/problems/one-edit-distance/description/)
+
+---
+
 ## 🏆 Vision  
 💡 *This repository is not just about organizing problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
 
