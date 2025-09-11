@@ -78,6 +78,11 @@
 
 ---
 
+### ✅ DAY 15 - [11 SEPTEMBER 2025] - *Thursday*
+🔗 [Read N Characters Given Read4](https://leetcode.com/problems/read-n-characters-given-read4/description/)
+
+---
+
 ## 🏆 Vision  
 💡 *This repository is not just about organizing problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
 
