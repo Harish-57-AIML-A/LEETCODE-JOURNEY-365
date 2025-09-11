@@ -1,7 +1,9 @@
 🌟 Day 15 – Read N Characters Given Read4
 
 📌 **Difficulty**: 🟢 Easy
+
 📌 **Frequency**: 📉 N/A
+
 📌 **Link**: 🔗 [LeetCode Problem](https://leetcode.com/problems/read-n-characters-given-read4/)
 
 ---
