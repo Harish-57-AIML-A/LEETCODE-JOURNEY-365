@@ -83,6 +83,11 @@
 
 ---
 
+### ✅ DAY 16 - [12 SEPTEMBER 2025] - *Friday*
+🔗 [Read N Characters Given Read4](https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/description/)
+
+---
+
 ## 🏆 Vision  
 💡 *This repository is not just about organizing problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
 
