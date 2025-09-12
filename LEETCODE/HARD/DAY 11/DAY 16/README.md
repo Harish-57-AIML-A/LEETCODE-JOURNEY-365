@@ -1,7 +1,9 @@
 🌟 Day 16 – Read N Characters Given Read4 (Multiple Calls)
 
 📌 **Difficulty**: 🔴 Hard
+
 📌 **Frequency**: 📉 N/A
+
 📌 **Link**: [🔗 LeetCode Problem](https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/)
 
 ---
