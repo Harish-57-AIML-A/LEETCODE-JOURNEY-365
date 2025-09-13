@@ -1,7 +1,9 @@
 🌟 Day 17 – Reverse Integer
 
 📌 **Difficulty**: 🟢 Easy
+
 📌 **Frequency**: 🔥 High
+
 📌 **Link**: [🔗 LeetCode Problem](https://leetcode.com/problems/reverse-integer/)
 
 ---
