@@ -93,6 +93,11 @@
 
 ---
 
+### ✅ DAY 18 - [14 SEPTEMBER 2025] - *Sunday*
+🔗 [Plus One](https://leetcode.com/problems/plus-one/description/)
+
+---
+
 ## 🏆 Vision  
 💡 *This repository is not just about organizing problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
 
