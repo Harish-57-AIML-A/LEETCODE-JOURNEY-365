@@ -1,7 +1,9 @@
 🚀 Day 18 – Plus One
 
 🔗 **Problem Link:** [LeetCode – Plus One](https://leetcode.com/problems/plus-one/)
+
 📊 **Difficulty:** Easy
+
 🔥 **Frequency:** High
 
 ---
