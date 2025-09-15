@@ -120,7 +120,7 @@ print(sol.isPalindrome(12321))  # True
 
 | 🔎 Aspect               | ⚡ Digit-compare (no extra space)                                                                                       |  
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------ | 
-| ⏱ **Time Complexity**   | **O(d)** where `d` = number of digits in `x` → \`O(log₁₀(                                                                |  
+| ⏱ **Time Complexity**   | **O(d)** where `d` = number of digits in `x` → \`O(log₁₀())                                                              |  
 | 💾 **Space Complexity** | **O(1)** constant extra space                                                                                            |   
 | 📝 Notes                | This method avoids string allocation and integer-reverse overflow issues. String method would be O(d) time & O(d) space. |       
 
