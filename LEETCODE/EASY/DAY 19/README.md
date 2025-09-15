@@ -1,7 +1,9 @@
 🌟 Day 19 – Palindrome Number
 
 📌 **Difficulty**: 🟢 Easy
+
 📌 **Frequency**: 🔁 Medium
+
 📌 **Link**: [🔗 LeetCode Problem](https://leetcode.com/problems/palindrome-number/)
 
 ---
