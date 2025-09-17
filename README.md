@@ -103,6 +103,11 @@
 
 ---
 
+### ✅ DAY 20 - [16 SEPTEMBER 2025] - *Tuesday*
+🔗 [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
+
+---
+
 ## 🏆 Vision  
 💡 *This repository is not just about organizing problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
 
