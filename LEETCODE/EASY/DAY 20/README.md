@@ -1,7 +1,9 @@
 🌟 Day 20 – Merge Two Sorted Lists
 
 📌 **Difficulty**: 🟢 Easy
+
 📌 **Frequency**: 🔁 Medium
+
 📌 **Link**: [🔗 LeetCode Problem](https://leetcode.com/problems/merge-two-sorted-lists/)
 
 ---
