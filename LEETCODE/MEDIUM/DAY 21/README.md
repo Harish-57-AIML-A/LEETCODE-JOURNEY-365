@@ -1,7 +1,9 @@
 🌟 Day 21 – Add Two Numbers
 
 📌 **Difficulty**: 🟡 Medium
+
 📌 **Frequency**: 🔥 High
+
 📌 **Link**: [🔗 LeetCode Problem](https://leetcode.com/problems/add-two-numbers/)
 
 ---
