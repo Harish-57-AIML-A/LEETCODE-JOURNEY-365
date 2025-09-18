@@ -1,7 +1,9 @@
 Day 22 - Swap Nodes in Pairs
 
 🔗 **Problem Link:** [Swap Nodes in Pairs](https://oj.leetcode.com/problems/swap-nodes-in-pairs/)
+
 📊 **Difficulty:** Medium
+
 🔥 **Frequency:** Medium
 
 ---
