@@ -113,6 +113,11 @@
 
 ---
 
+### ✅ DAY 22 - [18 SEPTEMBER 2025] - *Thursday*
+🔗 [Swap Nodes In Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/)
+
+---
+
 ## 🏆 Vision  
 💡 *This repository is not just about organizing problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
 
