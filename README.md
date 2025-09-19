@@ -118,6 +118,11 @@
 
 ---
 
+### ✅ DAY 23 - [19 SEPTEMBER 2025] - *Friday*
+🔗 [Merge K Sorted Linked Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/)
+
+---
+
 ## 🏆 Vision  
 💡 *This repository is not just about organizing problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
 
