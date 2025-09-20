@@ -1,7 +1,9 @@
 🌟 Day 24 – Copy List with Random Pointer
 
 📌 **Difficulty**: 🔴 Hard
+
 📌 **Frequency**: 🔥 High
+
 📌 **Link**: [🔗 LeetCode Problem](https://oj.leetcode.com/problems/copy-list-with-random-pointer/)
 
 ---
