@@ -123,6 +123,11 @@
 
 ---
 
+### ✅ DAY 24 - [20 SEPTEMBER 2025] - *Saturday*
+🔗 [Copy List With Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/)
+
+---
+
 ## 🏆 Vision  
 💡 *This repository is not just about organizing problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
 
