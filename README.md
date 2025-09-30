@@ -139,6 +139,11 @@
 
 ---
 
+### ✅ DAY 27 - [23 SEPTEMBER 2025] - *Tuesday*
+🔗 [Minimum Depth Of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/description/)
+
+---
+
 ## 🏆 Vision  
 💡 *This repository is not just about organizing problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
 
