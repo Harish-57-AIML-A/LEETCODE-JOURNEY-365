@@ -128,6 +128,12 @@
 
 ---
 
+
+### ✅ DAY 25 - [21 SEPTEMBER 2025] - *Sunday*
+🔗 [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
+
+---
+
 ## 🏆 Vision  
 💡 *This repository is not just about organizing problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
 
