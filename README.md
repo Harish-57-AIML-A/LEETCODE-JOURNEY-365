@@ -150,6 +150,11 @@
 
 ---
 
+### ✅ DAY 29 - [25 SEPTEMBER 2025] - *Thursday*
+🔗 [Convert Sorted Array To BInary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/)
+
+---
+
 ## 🏆 Vision  
 💡 *This repository is not just about organizing problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
 
