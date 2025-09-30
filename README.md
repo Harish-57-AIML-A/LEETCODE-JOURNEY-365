@@ -171,6 +171,12 @@
 
 ---
 
+
+### ✅ DAY 33 - [28 SEPTEMBER 2025] - *Monday*
+🔗 [Single Number II](https://leetcode.com/problems/single-number-ii/description/)
+
+---
+
 ## 🏆 Vision  
 💡 *This repository is not just about organizing problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
 
