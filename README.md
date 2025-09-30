@@ -165,6 +165,12 @@
 
 ---
 
+
+### ✅ DAY 32 - [28 SEPTEMBER 2025] - *Sunday*
+🔗 [Single Number](https://leetcode.com/problems/single-number/description/)
+
+---
+
 ## 🏆 Vision  
 💡 *This repository is not just about organizing problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
 
