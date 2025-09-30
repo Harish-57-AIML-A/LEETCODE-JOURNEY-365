@@ -134,7 +134,7 @@
 
 ---
 
-### ✅ DAY 25 - [22 SEPTEMBER 2025] - *Monday*
+### ✅ DAY 26 - [22 SEPTEMBER 2025] - *Monday*
 🔗 [Maximum Depth Of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)
 
 ---
