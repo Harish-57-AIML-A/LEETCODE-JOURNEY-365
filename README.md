@@ -144,6 +144,12 @@
 
 ---
 
+
+### ✅ DAY 28 - [24 SEPTEMBER 2025] - *Wednesday*
+🔗 [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/)
+
+---
+
 ## 🏆 Vision  
 💡 *This repository is not just about organizing problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
 
