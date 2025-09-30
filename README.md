@@ -155,6 +155,11 @@
 
 ---
 
+### ✅ DAY 30 - [26 SEPTEMBER 2025] - *Friday*
+🔗 [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)
+
+---
+
 ## 🏆 Vision  
 💡 *This repository is not just about organizing problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
 
