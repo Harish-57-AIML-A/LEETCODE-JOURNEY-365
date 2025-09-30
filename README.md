@@ -177,6 +177,11 @@
 
 ---
 
+### ✅ DAY 34 - [29 SEPTEMBER 2025] - *Tuesday*
+🔗 [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/)
+
+---
+
 ## 🏆 Vision  
 💡 *This repository is not just about organizing problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
 
