@@ -3,9 +3,7 @@
 ### 🔗 Problem Link
 
 [Validate Binary Search Tree](https://oj.leetcode.com/problems/validate-binary-search-tree/)
-
 **Difficulty:** Medium
-
 **Frequency:** High
 
 ---
