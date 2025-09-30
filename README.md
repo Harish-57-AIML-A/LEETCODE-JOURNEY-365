@@ -160,6 +160,11 @@
 
 ---
 
+### ✅ DAY 31 - [27 SEPTEMBER 2025] - *Saturday*
+🔗 [Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down/description/)
+
+---
+
 ## 🏆 Vision  
 💡 *This repository is not just about organizing problems, but about building a mindset of consistency, discipline, and growth — one problem, one day, every day.*  
 
